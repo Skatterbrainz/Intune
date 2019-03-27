@@ -1,0 +1,21 @@
+<Configuration ID="92d3bb79-5214-49c5-aa26-2333c7b55cdf" DeploymentConfigurationID="00000000-0000-0000-0000-000000000000">
+  <Info Description="syntax: setup.exe /configure install_office_64_monthly.xml" />
+  <Add OfficeClientEdition="64" Channel="Monthly" ForceUpgrade="TRUE">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneNote" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="PinIconsToTaskbar" Value="FALSE" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <AppSettings>
+    <Setup Name="Company" Value="Contoso Corp" />
+  </AppSettings>
+  <Logging Level="Standard" Path="%temp%" />
+</Configuration>
