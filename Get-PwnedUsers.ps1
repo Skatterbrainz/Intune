@@ -1,4 +1,4 @@
-#requires -module HaveIBeenPwned,MSOnline
+#requires -modules HaveIBeenPwned,MSOnline
 
 function Get-PwnedUsers {
     param (
