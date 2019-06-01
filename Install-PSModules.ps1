@@ -1,5 +1,5 @@
 Write-Output "installing powershell modules"
-$modules = @('pswindowsupdate','carbon')
+$modules = @('az','dbatools','pswindowsupdate','carbon','tuner','azuread','msonline')
 try {
 	$modules | % {
 		if (!(Get-Module $_ -ListAvailable)) {
